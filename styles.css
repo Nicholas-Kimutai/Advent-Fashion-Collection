@@ -1,4 +1,31 @@
-#logo{
-padding:  2% 2%;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#ladies{
+background-image: url("images/ladieslanding.jpg");
+background-position: center;
+background-size: cover;
+padding: 20%;
+text-align: left;
+}
+#view-products{
+    background-color: #f1f1f1;
+    
+}
+#kids{
+text-align: center;
+padding: 20%;
 
 }
+.navbar {
+    background-color: white !important;
+}
+#ladies{
+    background-image: url("images/ladieslanding.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 20%;
+    text-align: left;
+    }
