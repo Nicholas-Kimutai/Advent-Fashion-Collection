@@ -4,7 +4,7 @@
     padding: 0;
 }
 #ladies{
-background-image: url("images/ladieslanding.jpg");
+background-image: url("images/girl.jpg");
 background-position: center;
 background-size: cover;
 padding: 20%;
@@ -22,10 +22,37 @@ padding: 20%;
 .navbar {
     background-color: white !important;
 }
-#ladies{
-    background-image: url("images/ladieslanding.jpg");
+#men{
+    background-image: url("images/menslanding.jpg");
     background-position: center;
     background-size: cover;
     padding: 20%;
-    text-align: left;
+    text-align: right;
+    
     }
+#about{
+    text-align: center;
+    margin-bottom: 25%;
+    margin-top: 2%;
+}
+#contactUs{
+    background-color: rgb(136, 129, 129,0.8);
+    padding-left:20%;
+    padding-top: 2%;
+}
+.nav-item a{
+    float: left;
+  /* padding: 40%; */
+  color: black;
+  text-decoration: none;
+  font-size: 17px; 
+  text-align: center; 
+}
+
+
+
+
+    
+
+
+
