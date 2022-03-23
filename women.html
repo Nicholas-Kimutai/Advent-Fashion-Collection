@@ -12,9 +12,9 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-8">
-                <div class="OrderH" id="women_order">
-                    <!-- <h2 >OUR OFFERS</h2> -->
-                    <h3>Available Products</h3>
+                 <div class="OrderH" id="women_order">
+                    <h2 >WOMEN'S FASHION</h2>
+                    <h3>Available Items</h3>
                     <div class="items mt-4">
                         <div class="row">
                             <div class="col-md-4">
@@ -27,7 +27,7 @@
                                <div class="card-footer">
                               <small class="text-muted"><button type="submit" id="sweater-btn" data-bs-toggle="modal" data-bs-target="#myModal">Details</button></small>
                           </div>
-                        </div>
+                       </div>
                       </div>
                       <div class="col-md-4">
                         <div class="card h-100">
@@ -51,12 +51,111 @@
                           <div class="card-footer">
                             <small class="text-muted"><button type="submit" id="dress-btn" data-bs-toggle="modal" data-bs-target="#myModal">Details</button></small>
                           </div>
+                        </div>                      
+                      </div>
                         </div>
+                        <br><br>
+                      <div class="row">
+                          <div class="col-md-4">
+                        <div class="card h-100">
+                          <img src="womenimages/shoess.jpg" id="chunky-img" class="card-img-top">
+                          <div class="card-body">
+                            <h5 class="card-title">Chunky Boots</h5>
+                            <p class="card-text">Ksh.1800</p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted"><button type="submit" id="chunky-btn" data-bs-toggle="modal" data-bs-target="#myModal">Details</button></small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card h-100">
+                          <img src="womenimages/handbag.webp" id="bag-img" class="shoes-img-top">
+                          <div class="card-body">
+                            <h5 class="card-title">Handbag</h5>
+                            <p class="card-text">Ksh.2500</p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted"><button type="submit" id="bag-btn" data-bs-toggle="modal" data-bs-target="#myModal">Details</button></small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card h-100">
+                          <img src="womenimages/skirt.jpg" id="bag-img" class="shoes-img-top">
+                          <div class="card-body">
+                            <h5 class="card-title">Skater Skirt</h5>
+                            <p class="card-text">Ksh.1000</p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted"><button type="submit" id="bag-btn" data-bs-toggle="modal" data-bs-target="#myModal">Details</button></small>
+                          </div>
+                        </div>
+                      </div>
                       </div>
                     </div>
                     </div>
-                </div>
+                </div>               
+
+            
+             <div class="col-md-1"></div>     
+              <div class="col-md-3">
+          <div class="cart-header">
+            <br><br>
+            <h3>Order Summary</h3>
+          </div>
+          <div class="orders mt-4" id="orders-display">
+            <div class="total">
+                <!-- <iframe src="https://giphy.com/embed/jrzx1JbnQeTwSz2IaV" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dresses-closet-haliejost-jrzx1JbnQeTwSz2IaV">via GIPHY</a></p> -->
+              <p id="notordered">You have not selected any item.</p>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Color</th>
+                  </tr>
+                </thead>
+                <tbody id="total-orders">
+                  <tr>
+                    <td id="menname"></td>
+                    <td id="mensize"></td>
+                    <td id="mencolor"></td>
+                    <td id="menprice"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p id="mentotalprice"></p>
+              <p id="deliveryfee">The Delivery fee is 250Ksh</p>
             </div>
+            <div class="order-btn">
+              <button form="checkoutfrm" id="proceedbtn" type="submit">Order</button>
+            </div>
+          </div>
+          <div class="checkout mt-5">
+            <form id="checkoutfrm">
+              <div class="form-row align-items-center">
+                <div class="col-auto">
+                  <label class="sr-only" for="username">Name</label>
+                  <input type="text" class="form-control mb-2" id="username" placeholder="Your Full Name">
+                </div>
+                <div class="col-auto">
+                  <label class="sr-only" for="phone">Phone Number</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+                </div>
+                <div class="col-auto">
+                  <label class="sr-only" for="location">location</label>
+                  <input type="text" class="form-control" id="location" placeholder="Location/Street">
+                </div>
+              </div>
+                <div class="col-auto">
+                  <button type="submit" id="checkbtn" class="mt-3">Order</button>
+                </div>
+              </div>
+            </form>
+          </div>
+         </div>   
+
         </div>
     </div>   
     
