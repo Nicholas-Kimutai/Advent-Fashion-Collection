@@ -8,13 +8,21 @@
 //     event.preventDefault();
 //   modal.style.display = "block";
 // }
+let showLocation = document.getElementById("checkoutfrm")
+let showSummary =  document.getElementById("summary")
  function displaySummary() {
-   let x =  document.getElementById("summary")
-    let y = document.getElementById("orderSummary")
+    // let afterModal = document.getElementById("card1")
+    let hideSummary = document.getElementById("orderSummary")
 
-      x.style.display = "block"
-      y.style.display = "none"
+      showSummary.style.display = "block"
+      hideSummary.style.display = "none"
  }
+
+
+function displayLocation() {
+    
+    showLocation.style.display = "block"
+}
 
     
 
