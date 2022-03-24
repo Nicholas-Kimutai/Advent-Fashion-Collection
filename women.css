@@ -1,3 +1,7 @@
-#checkoutfrm, #summary, #modal{
+table, #deliveryfee,.order-btn,.checkout{
     display: none;
+}
+.OrderH h2{
+    text-align: center;
+    color: burlywood;
 }
