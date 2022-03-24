@@ -36,3 +36,9 @@ function Men(name,size,colors,total){
     this.colors = colors;
     this.total = total;
 }
+Men.prototype.menColors = function(){
+    let col= "";
+    this.colors.forEach(function(color){
+        col = color.name;
+    });
+}
