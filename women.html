@@ -1,163 +1,673 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="women.css">
     <title>Advent Collection</title>
 </head>
-<body> 
+
+<body>
     <div class="container mt-5">
         <div class="row">
             <div class="col-8">
-                 <div class="OrderH" id="women_order">
-                    <h2 >WOMEN'S FASHION</h2>
+                <div class="OrderH" id="women_order">
+                    <h2>WOMEN'S FASHION</h2>
                     <h3>Available Items</h3>
                     <div class="items mt-4">
                         <div class="row">
                             <div class="col-md-4">
-                             <div class="card h-100">
-                               <img src="womenimages/sweater.webp" id="sweater-img" class="card-img-top">
-                              <div class="card-body">
-                                <h5 class="card-title">Sweater-Top</h5>
-                                <p class="card-text">Ksh.1200</p>
-                              </div>
-                               <div class="card-footer">
-                              <small class="text-muted"><button type="submit" id="sweater-btn" data-bs-toggle="modal" data-bs-target="#myModal">Details</button></small>
-                          </div>
-                       </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card h-100">
-                          <img src="womenimages/dress.jpeg" id="dress-img" class="card-img-top">
-                          <div class="card-body">
-                            <h5 class="card-title">Dress</h5>
-                            <p class="card-text">Ksh.3000</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted"><button type="submit" id="dress-btn" data-bs-toggle="modal" data-bs-target="#myModal">Details</button></small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card h-100">
-                          <img src="womenimages/shoes1.webp" id="dress-img" class="card-img-top">
-                          <div class="card-body">
-                            <h5 class="card-title">Boots</h5>
-                            <p class="card-text">Ksh.4500</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted"><button type="submit" id="dress-btn" data-bs-toggle="modal" data-bs-target="#myModal">Details</button></small>
-                          </div>
-                        </div>                      
-                      </div>
+                                <div class="card h-100">
+                                    <img src="womenimages/sweater.webp" id="sweater-img" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sweater-Top</h5>
+                                        <p class="card-text">Ksh.1200</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><button type="button" class="btn btn-dark btn-sm"
+                                                data-bs-toggle="modal"
+                                            data-bs-target="#card1">
+                                            Details
+                                        </button></small>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <img src="womenimages/dress.jpeg" id="dress-img" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dress</h5>
+                                        <p class="card-text">Ksh.3000</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><button type="button" class="btn btn-dark btn-sm"
+                                                data-bs-toggle="modal" data-bs-target="#card2">
+                                                Details
+                                            </button></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <img src="womenimages/shoes1.webp" id="dress-img" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Boots</h5>
+                                        <p class="card-text">Ksh.4500</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><button type="button" class="btn btn-dark btn-sm"
+                                                data-bs-toggle="modal" data-bs-target="#card3">
+                                                Details
+                                            </button></small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <br><br>
-                      <div class="row">
-                          <div class="col-md-4">
-                        <div class="card h-100">
-                          <img src="womenimages/shoess.jpg" id="chunky-img" class="card-img-top">
-                          <div class="card-body">
-                            <h5 class="card-title">Chunky Boots</h5>
-                            <p class="card-text">Ksh.1800</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted"><button type="submit" id="chunky-btn" data-bs-toggle="modal" data-bs-target="#myModal">Details</button></small>
-                          </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <img src="womenimages/shoess.jpg" id="chunky-img" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chunky Boots</h5>
+                                        <p class="card-text">Ksh.1800</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><button type="button" class="btn btn-dark btn-sm"
+                                                data-bs-toggle="modal" data-bs-target="#card4">
+                                                Details
+                                            </button></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <img src="womenimages/handbag.webp" id="bag-img" class="shoes-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Handbag</h5>
+                                        <p class="card-text">Ksh.2500</p>
+                                    </div>
+                                    <div class="card-footer">
+                                       <small class="text-muted"><button type="button" class="btn btn-dark btn-sm"
+                                               data-bs-toggle="modal" data-bs-target="#card5">
+                                               Details
+                                           </button></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <img src="womenimages/skirt.jpg" id="bag-img" class="shoes-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Skater Skirt</h5>
+                                        <p class="card-text">Ksh.1000</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><button type="button" class="btn btn-dark btn-sm"
+                                                data-bs-toggle="modal" data-bs-target="#card6">
+                                                Details
+                                            </button></small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card h-100">
-                          <img src="womenimages/handbag.webp" id="bag-img" class="shoes-img-top">
-                          <div class="card-body">
-                            <h5 class="card-title">Handbag</h5>
-                            <p class="card-text">Ksh.2500</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted"><button type="submit" id="bag-btn" data-bs-toggle="modal" data-bs-target="#myModal">Details</button></small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card h-100">
-                          <img src="womenimages/skirt.jpg" id="bag-img" class="shoes-img-top">
-                          <div class="card-body">
-                            <h5 class="card-title">Skater Skirt</h5>
-                            <p class="card-text">Ksh.1000</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted"><button type="submit" id="bag-btn" data-bs-toggle="modal" data-bs-target="#myModal">Details</button></small>
-                          </div>
-                        </div>
-                      </div>
-                      </div>
                     </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <div class="cart-header">
+                    <br><br>
+                    <h3>Order Summary</h3>
+                </div>
+                <div class="orders mt-4" id="orders-display">
+                    <div class="total">
+                        <div id="orderSummary">
+                        <p id="notordered">Make order to view your summary</p>
+                        <iframe src="https://giphy.com/embed/jrzx1JbnQeTwSz2IaV" width="280" height="380" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        </div>
+                        <div id="summary">
+
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Item-Name</th>
+                                        <th scope="col">Size</th>
+                                        <th scope="col">Color</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="total-orders">
+                                    <tr>
+                                        <td id="menname"></td>
+                                        <td id="mensize"></td>
+                                        <td id="mencolor"></td>
+                                        <td id="menprice"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p id="mentotalprice"></p>
+                            <p id="deliveryfee">The Delivery fee is 250Ksh</p>
+
+                            <div class="order-btn">
+                                <button form="checkoutfrm" id="proceedbtn" type="submit">Order</button>
+                            </div>
+                        </div>
                     </div>
-                </div>               
+                </div>
+                <div class="checkout mt-5">
 
-            
-             <div class="col-md-1"></div>     
-              <div class="col-md-3">
-          <div class="cart-header">
-            <br><br>
-            <h3>Order Summary</h3>
-          </div>
-          <div class="orders mt-4" id="orders-display">
-            <div class="total">
-                <!-- <iframe src="https://giphy.com/embed/jrzx1JbnQeTwSz2IaV" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dresses-closet-haliejost-jrzx1JbnQeTwSz2IaV">via GIPHY</a></p> -->
-              <p id="notordered">You have not selected any item.</p>
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Size</th>
-                    <th scope="col">Color</th>
-                  </tr>
-                </thead>
-                <tbody id="total-orders">
-                  <tr>
-                    <td id="menname"></td>
-                    <td id="mensize"></td>
-                    <td id="mencolor"></td>
-                    <td id="menprice"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <p id="mentotalprice"></p>
-              <p id="deliveryfee">The Delivery fee is 250Ksh</p>
+                    <form id="checkoutfrm">
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <label class="sr-only" for="username">Name</label>
+                                <input type="text" class="form-control mb-2" id="username" placeholder="Your Full Name">
+                            </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="phone">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+                            </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="location">location</label>
+                                <input type="text" class="form-control" id="location" placeholder="Location/Street">
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" id="checkbtn" class="mt-3">Order</button>
+                        </div>
+                </div>
+                </form>
             </div>
-            <div class="order-btn">
-              <button form="checkoutfrm" id="proceedbtn" type="submit">Order</button>
-            </div>
-          </div>
-          <div class="checkout mt-5">
-            <form id="checkoutfrm">
-              <div class="form-row align-items-center">
-                <div class="col-auto">
-                  <label class="sr-only" for="username">Name</label>
-                  <input type="text" class="form-control mb-2" id="username" placeholder="Your Full Name">
-                </div>
-                <div class="col-auto">
-                  <label class="sr-only" for="phone">Phone Number</label>
-                    <input type="text" class="form-control" id="phone" placeholder="Phone Number">
-                </div>
-                <div class="col-auto">
-                  <label class="sr-only" for="location">location</label>
-                  <input type="text" class="form-control" id="location" placeholder="Location/Street">
-                </div>
-              </div>
-                <div class="col-auto">
-                  <button type="submit" id="checkbtn" class="mt-3">Order</button>
-                </div>
-              </div>
-            </form>
-          </div>
-         </div>   
+            <div class="modals">
+                <div class="modal fade" id="card1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <!-- card1 -->
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Pick Sweater Size</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sweaters" id="small">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Small
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sweaters" id="medium"
+                                        >
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Medium
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sweaters" id="large">
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        Large
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sweaters" id="extral"
+                                        >
+                                    <label class="form-check-label" for="flexRadioDefault4">
+                                        Extra Large
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <hr>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Pick Sweater Color</h5>
 
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" value="Black" type="radio" name="sweaterc" id="small">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Black 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" value="Blue" type="radio" name="sweaterc" id="medium"
+                                        >
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Blue 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" value="Brown" type="radio" name="sweaterc" id="large">
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        Brown 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" value="Pink" type="radio" name="sweaterc" id="extral"
+                                        >
+                                    <label class="form-check-label" for="flexRadioDefault4">
+                                        Pink
+                                    </label>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button"  class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" onclick="displaySummary()"
+                                        class="btn btn-dark orderbtn">Order</button>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+               <!-- card2 -->
+               <div class="modal fade" id="card2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                   aria-hidden="true">
+                   <div class="modal-dialog modal-dialog-centered">
+                       <div class="modal-content">
+                           <div class="modal-header">
+                               <h5 class="modal-title" id="exampleModalLabel">Pick Dress Size</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                   aria-label="Close"></button>
+                           </div>
+                           <div class="modal-body">
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Small" type="radio" name="dresss" id="small">
+                                   <label class="form-check-label" for="flexRadioDefault1">
+                                       Small
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Medium" type="radio" name="dresss" id="medium"
+                                       >
+                                   <label class="form-check-label" for="flexRadioDefault2">
+                                       Medium
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Large" type="radio" name="dresss" id="large">
+                                   <label class="form-check-label" for="flexRadioDefault3">
+                                       Large
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Extra-Large" type="radio" name="dresss" id="extral"
+                                       >
+                                   <label class="form-check-label" for="flexRadioDefault4">
+                                       Extra Large
+                                   </label>
+                               </div>
+                               <hr>
+                               <div class="modal-header">
+                                   <h5 class="modal-title" id="exampleModalLabel">Pick Dress Color</h5>
+
+                               </div>
+                               <div class="modal-body">
+                                   <div class="form-check">
+                                       <input class="form-check-input" value="Black" type="radio" name="dressc"
+                                           id="small">
+                                       <label class="form-check-label" for="flexRadioDefault1">
+                                           Black
+                                       </label>
+                                   </div>
+                                   <div class="form-check">
+                                       <input class="form-check-input" value="Blue" type="radio" name="dressc" id="medium"
+                                           >
+                                       <label class="form-check-label" for="flexRadioDefault2">
+                                           Blue
+                                       </label>
+                                   </div>
+                                   <div class="form-check">
+                                       <input class="form-check-input" value="Brown" type="radio" name="dressc"
+                                           id="large">
+                                       <label class="form-check-label" for="flexRadioDefault3">
+                                           Brown
+                                       </label>
+                                   </div>
+                                   <div class="form-check">
+                                       <input class="form-check-input" value="Pink" type="radio" name="dressc" id="extral"
+                                           >
+                                       <label class="form-check-label" for="flexRadioDefault4">
+                                           Pink
+                                       </label>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               <button type="button" onclick="displaySummary()" class="btn btn-dark">Order</button>
+                           </div>
+                       </div>
+
+                   </div>
+               </div>
+               <!-- card3 -->
+               <div class="modal fade" id="card3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                   <div class="modal-dialog modal-dialog-centered">
+                       <div class="modal-content">
+                           <div class="modal-header">
+                               <h5 class="modal-title" id="exampleModalLabel">Pick Boots Size</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                   aria-label="Close"></button>
+                           </div>
+                           <div class="modal-body">
+                               <div class="form-check">
+                                   <input class="form-check-input" value="36" type="radio" name="boots"
+                                       id="small">
+                                   <label class="form-check-label" for="flexRadioDefault1">
+                                       36
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="38" type="radio" name="bootss" id="medium"
+                                       >
+                                   <label class="form-check-label" for="flexRadioDefault2">
+                                       38
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="40" type="radio" name="bootss" id="large">
+                                   <label class="form-check-label" for="flexRadioDefault3">
+                                       40
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="42" type="radio" name="bootss" id="extral"
+                                       >
+                                   <label class="form-check-label" for="flexRadioDefault4">
+                                       42
+                                   </label>
+                               </div>
+                           </div>
+                           <hr>
+                           <div class="modal-header">
+                               <h5 class="modal-title" id="exampleModalLabel">Pick Boots Color</h5>
+                               
+                           </div>
+                           <div class="modal-body">
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Black" type="radio" name="bootsc" id="small">
+                                   <label class="form-check-label" for="flexRadioDefault1">
+                                       Black
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Blue" type="radio" name="bootsc"
+                                       id="medium"
+                                       >
+                                   <label class="form-check-label" for="flexRadioDefault2">
+                                       Blue
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Brown" type="radio" name="bootsc"
+                                       id="large">
+                                   <label class="form-check-label" for="flexRadioDefault3">
+                                       Brown
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Pink" type="radio" name="bootsc"
+                                       id="extral"
+                                       >
+                                   <label class="form-check-label" for="flexRadioDefault4">
+                                       Pink
+                                   </label>
+                               </div>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               <button type="button" onclick="displaySummary()" class="btn btn-dark">Order</button>
+                           </div>
+                       </div>
+
+                   </div>
+               </div>
+               <!-- card4 -->
+               <div class="modal fade" id="card4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                   <div class="modal-dialog modal-dialog-centered">
+                       <div class="modal-content">
+                           <div class="modal-header">
+                               <h5 class="modal-title" id="exampleModalLabel">Pick Chunky Size</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                   aria-label="Close"></button>
+                           </div>
+                           <div class="modal-body">
+                               <div class="form-check">
+                                   <input class="form-check-input" value="36" type="radio" name="chunkys" id="small">
+                                   <label class="form-check-label" for="flexRadioDefault1">
+                                       36
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="38" type="radio" name="chunkys" id="medium"
+                                       >
+                                   <label class="form-check-label" for="flexRadioDefault2">
+                                       38
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="40" type="radio" name="chunkys" id="large">
+                                   <label class="form-check-label" for="flexRadioDefault3">
+                                       40
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="42" type="radio" name="chunkys" id="extral"
+                                       >
+                                   <label class="form-check-label" for="flexRadioDefault4">
+                                       42
+                                   </label>
+                               </div>
+                               <hr>
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Pick Chunky Color</h5>
+
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" value="Black" type="radio" name="chunkyc"
+                                            id="small">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Black
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" value="Blue" type="radio" name="chunkyc"
+                                            id="medium" >
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Blue
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" value="Brown" type="radio" name="chunkyc"
+                                            id="large">
+                                        <label class="form-check-label" for="flexRadioDefault3">
+                                            Brown
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" value="Pink" type="radio" name="chunkyc"
+                                            id="extral">
+                                        <label class="form-check-label" for="flexRadioDefault4">
+                                            Pink
+                                        </label>
+                                    </div>
+                                </div>
+
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               <button type="button" onclick="displaySummary()" class="btn btn-dark">Order</button>
+                           </div>
+                       </div>
+
+                   </div>
+               </div>
+               <!-- card5 -->
+               <div class="modal fade" id="card5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                   <div class="modal-dialog modal-dialog-centered">
+                       <div class="modal-content">
+                           <div class="modal-header">
+                               <h5 class="modal-title" id="exampleModalLabel">Pick Bag Size</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                   aria-label="Close"></button>
+                           </div>
+                           <div class="modal-body">
+                               <div class="form-check">
+                                   <input class="form-check-input" type="radio" name="bags" id="small">
+                                   <label class="form-check-label" for="flexRadioDefault1">
+                                       Small
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" type="radio" name="bags" id="medium"
+                                       >
+                                   <label class="form-check-label" for="flexRadioDefault2">
+                                       Large
+                                   </label>
+                               </div>
+                               
+                           </div>
+                           <hr>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Pick Bag Color</h5>
+
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" value="Black" type="radio" name="dressc" id="small">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Black
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" value="Blue" type="radio" name="dressc" id="medium"
+                                        >
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Blue
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" value="Brown" type="radio" name="dressc" id="large">
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        Brown
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" value="Pink" type="radio" name="dressc" id="extral"
+                                        >
+                                    <label class="form-check-label" for="flexRadioDefault4">
+                                        Pink
+                                    </label>
+                                </div>
+                            </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               <button type="button" onclick="displaySummary()" class="btn btn-dark">Order</button>
+                           </div>
+                       </div>
+
+                   </div>
+               </div>
+
+               <!-- card6 -->
+               <div class="modal fade" id="card6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                   <div class="modal-dialog modal-dialog-centered">
+                       <div class="modal-content">
+                           <div class="modal-header">
+                               <h5 class="modal-title" id="exampleModalLabel">Pick Skirt Size</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                   aria-label="Close"></button>
+                           </div>
+                           <div class="modal-body">
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Small" type="radio" name="skirts" id="small">
+                                   <label class="form-check-label" for="flexRadioDefault1">
+                                       Small
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input"  value="Medium" type="radio" name="skirts" id="medium">
+                                   <label class="form-check-label" for="flexRadioDefault2">
+                                       Medium
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Large" type="radio" name="skirts" id="large">
+                                   <label class="form-check-label" for="flexRadioDefault3">
+                                       Large
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Extra-Large" type="radio" name="skirts" id="extral">
+                                   <label class="form-check-label" for="flexRadioDefault4">
+                                       Extra-Large
+                                   </label>
+                               </div>
+                           </div>
+                           <hr>
+                           <div class="modal-header">
+                               <h5 class="modal-title" id="exampleModalLabel">Pick Skirt Color</h5>
+
+                           </div>
+                           <div class="modal-body">
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Black" type="radio" name="skirtc" id="small">
+                                   <label class="form-check-label" for="flexRadioDefault1">
+                                       Black
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Blue" type="radio" name="skirtc" id="medium"
+                                       >
+                                   <label class="form-check-label" for="flexRadioDefault2">
+                                       Blue
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Brown" type="radio" name="skirtc" id="large">
+                                   <label class="form-check-label" for="flexRadioDefault3">
+                                       Brown
+                                   </label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" value="Pink" type="radio" name="skirtc" id="extral"
+                                       >
+                                   <label class="form-check-label" for="flexRadioDefault4">
+                                       Pink
+                                   </label>
+                               </div>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               <button type="button" onclick="displaySummary()" class="btn btn-dark">Order</button>
+                           </div>
+                       </div>
+
+                   </div>
+               </div>
+
+               
+                
+               
+            </div>
         </div>
-    </div>   
-    
+
+    </div>
+    </div>
+     <script src="women.js"></script>
+     <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
 </body>
+
 </html>
