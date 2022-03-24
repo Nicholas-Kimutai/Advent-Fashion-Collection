@@ -17,3 +17,26 @@ function slider(){
     i++;
     setTimeout("slider()",3000);
 }
+
+
+function validate() {
+    var{name,email,message} = document.contactForm;
+    if( name.value == "") {
+       alert( "enter name!" );
+       name.focus() ;
+       return false;
+    }
+    else if( email.value ==""){
+       alert( "Enter email!" );
+       email.focus() ;
+       return false;
+    }
+    else if( message.value =="") {
+       alert( "write a message!" );
+       message.focus() ;
+       return false;
+    }else{
+        alert(name.value +" "+ "we have received your message. Thank you for reaching out to us.")
+        return true;
+    }
+   }
