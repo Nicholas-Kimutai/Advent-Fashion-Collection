@@ -9,17 +9,45 @@
     <title>Advent Collection</title>
 </head>
 <body onload="slider()">
+  <div class="fixed-top">
+    <nav id="navbar-scroll"  class="navbar  navbar-expand-lg container-fluid " >
+      <img  src="images/logo.jpg" alt="logo" width="80px" height="80px">
+      <a class="navbar-brand" href="#" id="adv" style="font-weight: 700; color: black;" >ADVENT COLLECTION</a>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+              </li>      
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#ladies">Collection</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
+              </li> 
+             
+              
+             
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+    </div>
 
-    <nav class="navbar container-fluid fixed-top navbar-expand-lg" id="nav-bar">
+    <!-- <nav class="navbar container-fluid fixed-top navbar-expand-lg" id="nav-bar">
         <div class="container-fluid">
          <img  src="images/logo.jpg" alt="logo" width="80px" height="80px">
           <a class="navbar-brand" href="#" id="adv" >ADVENT COLLECTION</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-right" id="navbarScroll">
+          <div class="collapse navbar-collapse " id="navbarScroll">
             <div class="nav">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll justify-content-end" style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
@@ -36,7 +64,7 @@
             </div>
           </div>
         </div>
-      </nav>
+      </nav> -->
 
       <div class="banner">
         <div class="slider">
@@ -44,8 +72,8 @@
         </div>
         <div class="overlay">
           <div class="content">
-            <h1>"Fashions fade. Style is eternal."</h1>
-            <h5>– Yves Saint Laurent"</h5>
+            <h1>"Life is short, make every outfit count!"</h1>
+            <h4>– Yves Saint Laurent"</h4>
             <a href="#ladies">
             <button type="button" class="btn-dark" id="btn">LET'S SHOP</button>
             </a>
@@ -69,6 +97,7 @@
         <div  id="ladies"class="ladies">
           <h1>LADIES</h1>
           <h1>COLLECTION</h1>
+          <h3>Checkout our latest fashion collection</h3>
           <a href="women.html">
             <button  id="view-products"class="btn btn-dark">View Products</button>
           </a>
@@ -81,6 +110,7 @@
           <div class="card-body">
             <h1 class="card-title">KIDS </h1>
             <h1 class="card-text">COLLECTION</h1>
+            <h3 >Checkout our latest fashion collection</h3>
             <a href="kids.html">
               <button  id="view-products"class="btn ">View Products</button>
             </a>
@@ -96,6 +126,7 @@
         <div  id="men"class="men">
             <h1 class="text">MEN'S</h1>
             <h1 >COLLECTION</h1>
+            <h3 class="me">Checkout our latest fashion collection</h3>
             <a href="mens.html">
               <button  id="view-products"class="btn ">View Products</button>
             </a>
